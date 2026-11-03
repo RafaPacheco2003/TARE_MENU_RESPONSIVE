@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Organica – The Agriculture Farm</title>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#inicio"><img src="/imagenes/logo_arriba.png" alt="Organica – The Agriculture Farm"></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Nuestros Productos</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap"><h1>Cultivamos verduras orgánicas y las traemos a tu mesa</h1></div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p class="sub">Lo que ofrecemos</p>
+    <div class="cards" id="productos">
+      <article class="card">
+        <img src="/imagenes/icono1.png" alt="">
+        <h3>Ganado Vacuno</h3>
+        <p>Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/icono2.png" alt="">
+        <h3>Productos Lácteos</h3>
+        <p>Los productos lácteos como la leche, el queso y el yogur contienen los nutrientes que su cuerpo necesita.</p>
+      </article>
+      <article class="card">
+        <img src="imagenes/icono3.png" alt="">
+        <h3>Frutas de la Huerta</h3>
+        <p>Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas de huerta.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <img src="imagenes/logo_abajo.png" alt="Organica – The Agriculture Farm">
+</footer>
+
+<script>
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+</script>
+</body>
+</html>
